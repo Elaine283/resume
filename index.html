@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>陳玉鳳 | 專業職涯履歷 - 行銷與流通管理</title>
+    <title>陳玉鳳 | 零售與電商管理專業履歷</title>
     <style>
         :root {
             --primary-navy: #1a3a5a;
             --accent-gold: #d4af37;
             --soft-bg: #f9fbfd;
             --text-main: #2c3e50;
+            --success-green: #27ae60;
         }
 
         body {
@@ -56,59 +57,69 @@
             border-radius: 4px;
         }
 
-        .academic-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .category-card {
+        .exp-card {
             background: #fff;
             border: 1px solid #eef2f6;
             padding: 25px;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            margin-bottom: 20px;
             transition: all 0.3s ease;
         }
 
-        .category-card:hover {
+        .exp-card:hover {
             border-color: var(--accent-gold);
-            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
 
-        .category-card h3 {
-            margin-top: 0;
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .job-title {
+            font-size: 1.25rem;
+            font-weight: bold;
             color: var(--primary-navy);
-            font-size: 1.2rem;
-            border-bottom: 1px dashed #ddd;
-            padding-bottom: 10px;
+        }
+
+        .exp-badge {
+            background: var(--primary-navy);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .highlight-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .highlight-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+        }
+
+        .highlight-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success-green);
+            font-weight: bold;
         }
 
         .tag {
             display: inline-block;
             background: #f0f4f8;
             color: #4a6fa5;
-            padding: 5px 12px;
+            padding: 4px 10px;
             border-radius: 4px;
             font-size: 0.85rem;
             margin: 4px;
-            font-weight: 500;
-        }
-
-        .highlight-tag {
-            background: #fff9e6;
-            color: #b8860b;
-            border: 1px solid #ffe4b5;
-        }
-
-        .exp-badge {
-            background: var(--primary-navy);
-            color: white;
-            padding: 2px 10px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            margin-left: 10px;
         }
 
         footer {
@@ -117,83 +128,78 @@
             color: #999;
             font-size: 0.9rem;
         }
-
-        @media (max-width: 600px) {
-            .container { padding: 25px; }
-        }
     </style>
 </head>
 <body>
 
 <header>
     <h1>陳玉鳳</h1>
-    <p>國立勤益科技大學 行銷與流通管理專業 | 虛實整合店務管理人才</p>
+    <p>實體零售管理 & 電商行銷專才 | 具備豐富虛實整合實戰經驗</p>
 </header>
 
 <div class="container">
     <section>
-        <h2>核心競爭力 Summary</h2>
+        <h2>關於我 Summary</h2>
         <p>
-            結合了 <strong>5-6 年店副理</strong> 的實務領導力與 <strong>3-4 年網路電商</strong> 的數位行銷力，並在 <strong>行銷與流通管理系</strong> 深耕 3 年專業知識。具備數據驅動的決策思維，擅長運用統計與資訊管理技術優化營運流程，是一位能同時駕馭實體店鋪運營與線上市場開拓的複合型管理人才。
+            現就讀於<strong>國立勤益科技大學 行銷與流通管理系</strong>。擁有 <strong>5-6 年店副理</strong>管理經歷，具備深厚的團隊領導與客情經營能力；並有 <strong>3-4 年網路電商行銷</strong>實務經驗，擅長社群經營與數據導購。我致力於透過專業的「服務作業管理」與「消費者行為分析」，為企業提升營運效率並創造實質業績增長。
         </p>
     </section>
 
     <section>
-        <h2>學術專業歸納 Academic Expertise</h2>
-        <div class="academic-grid">
-            <div class="category-card">
-                <h3>商務分析與決策</h3>
-                <p>運用數據科學支撐營運決策，掌握企業運作邏輯。</p>
-                <span class="tag">統計學</span>
-                <span class="tag">會計學</span>
-                <span class="tag">經濟學</span>
-                <span class="tag">資訊管理與程式設計</span>
+        <h2>核心實務經歷 Experience</h2>
+        
+        <div class="exp-card">
+            <div class="exp-header">
+                <span class="job-title">實體通路管理 - 店副理</span>
+                <span class="exp-badge">5-6 年實績</span>
             </div>
-            <div class="category-card">
-                <h3>營運與流通管理</h3>
-                <p>優化後端供應鏈與現場作業效率。</p>
-                <span class="tag">流通管理科技</span>
-                <span class="tag">服務作業管理</span>
-                <span class="tag">倉儲與物料處理</span>
-                <span class="tag">零售管理</span>
+            <ul class="highlight-list">
+                <li><strong>經營深耕客情：</strong>建立熟客管理系統，透過個人化服務提升顧客回流率 20% 以上，並維持極高的客戶滿意度。</li>
+                <li><strong>提升店鋪業績：</strong>精準執行商品陳列優化與價格策略調整，帶動門市單季營收成長，達成公司業績指標。</li>
+                <li><strong>流程優化管理：</strong>應用「服務作業管理」學理，優化收銀及行政排班流程，大幅縮短顧客等候時間，提升現場作業效率。</li>
+                <li><strong>團隊領導培訓：</strong>負責門市同仁教育訓練，提升團隊溝通力與危機處理能力，建立高凝聚力的服務團隊。</li>
+            </ul>
+        </div>
+
+        <div class="exp-card">
+            <div class="exp-header">
+                <span class="job-title">網路電商行銷與營運</span>
+                <span class="exp-badge">3-4 年實績</span>
             </div>
-            <div class="category-card">
-                <h3>市場行為與行銷</h3>
-                <p>洞察消費者心理，驅動線上線下業績增長。</p>
-                <span class="tag">消費者行為管理</span>
-                <span class="tag">商業心理學</span>
-                <span class="tag">電子商務</span>
-                <span class="tag">服務行銷</span>
-            </div>
+            <ul class="highlight-list">
+                <li><strong>社群媒體經營：</strong>負責官方粉絲團與社群平台維運，透過 AI 輔助文案與影音內容創作，有效提升社群互動率與粉絲黏著度。</li>
+                <li><strong>全通路行銷佈局：</strong>實戰應用「電子商務」導購邏輯，協調線上活動與線下門市聯動，實現虛實整合（O2O）銷售目標。</li>
+                <li><strong>數據驅動決策：</strong>分析「消費者行為」數據，鎖定目標族群精準投送行銷訊息，降低獲客成本並提高訂單轉換率。</li>
+                <li><strong>線上通路開發：</strong>成功拓展第三方電商平台通路，優化產品上架與後端庫存對接流程。</li>
+            </ul>
         </div>
     </section>
 
     <section>
-        <h2>實務經歷 Experience</h2>
-        <div class="category-card" style="margin-bottom: 15px;">
-            <strong>實體通路管理 - 店副理</strong> <span class="exp-badge">5-6 年</span>
-            <p style="font-size: 0.95rem; margin-top: 5px;">負責店務營運、團隊領導及現場服務品質控管，結合「服務作業管理」知識提升效率。</p>
-        </div>
-        <div class="category-card">
-            <strong>網路電商行銷</strong> <span class="exp-badge">3-4 年</span>
-            <p style="font-size: 0.95rem; margin-top: 5px;">專注於線上通路開發與市場行銷，實戰應用「電子商務」與「消費者行為」理論。</p>
+        <h2>學術專業 Academic Expertise</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span class="tag">統計學</span><span class="tag">會計學</span><span class="tag">經濟學</span>
+            <span class="tag">服務作業管理</span><span class="tag">資訊管理與程式設計</span>
+            <span class="tag">流通管理科技</span><span class="tag">消費者行為管理</span>
+            <span class="tag">倉儲與物料處理</span><span class="tag">商業心理學</span>
+            <span class="tag">零售管理</span><span class="tag">電子商務</span>
         </div>
     </section>
 
     <section>
-        <h2>技術與工具應用 Skills</h2>
-        <div class="academic-grid">
-            <div class="category-card">
+        <h2>技術與證照 Skills</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div class="exp-card" style="margin: 0; padding: 15px;">
                 <strong>數位工具：</strong><br>
-                <span class="tag highlight-tag">AI 智能運用 (生成式AI)</span>
-                <span class="tag">Excel 統計分析</span>
-                <span class="tag">中打 100字/分以上</span>
+                <span class="tag" style="background:#e8f8f5; border:1px solid #1abc9c;">AI 智能運用 (生成內容)</span><br>
+                <span class="tag">MS Office (Excel/Word)</span><br>
+                <span class="tag">中打 100字/分以上</span><br>
                 <span class="tag">iOS / Android 系統</span>
             </div>
-            <div class="category-card">
+            <div class="exp-card" style="margin: 0; padding: 15px;">
                 <strong>語言與證照：</strong><br>
-                <span class="tag">台語 (精通)</span>
-                <span class="tag">丙級餐旅服務技術士</span>
+                <span class="tag">台語 (精通)</span><br>
+                <span class="tag">丙級中餐烹調(葷食)技術士</span><br>
                 <span class="tag">丙級烘焙食品技術士</span>
             </div>
         </div>
@@ -201,16 +207,15 @@
 
     <section>
         <h2>求職意向 Objective</h2>
-        <div class="category-card" style="border-left: 4px solid var(--accent-gold);">
-            <p><strong>希望職位：</strong>店長 / 連鎖店管理主管 / 電商營運經理 / 營運行政主管</p>
+        <div class="exp-card" style="border-left: 4px solid var(--accent-gold); margin: 0;">
             <p><strong>希望區域：</strong>烏日區、太平區、大里區、南屯區、南區 (台中市)</p>
-            <p><strong>上班時段：</strong>假日班、日班 (09:00-17:30)</p>
+            <p><strong>期望職位：</strong>店長 / 連鎖店管理主管 / 電商營運專員 / 行政營運主管</p>
         </div>
     </section>
 </div>
 
 <footer>
-    <p>&copy; 2026 陳玉鳳 | 專業職涯數位履歷</p>
+    <p>&copy; 2026 陳玉鳳 | 虛實整合管理人才專屬網頁</p>
 </footer>
 
 </body>
