@@ -3,56 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>陳玉鳳 | AI 協作後端開發工程師 (轉職中)</title>
+    <title>陳玉鳳 | AI 協作與轉職後端工程師</title>
     <style>
         :root {
-            --primary-tech: #0f172a;
-            --accent-cyan: #06b6d4;
-            --code-bg: #1e293b;
-            --text-slate: #94a3b8;
+            --primary-blue: #0056b3;
+            --accent-green: #10b981;
+            --bg-light: #f8fafc;
+            --text-dark: #1e293b;
+            --card-white: #ffffff;
         }
 
         body {
-            font-family: "JetBrains Mono", "PingFang TC", "Microsoft JhengHei", sans-serif;
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
             line-height: 1.7;
             margin: 0;
-            background-color: #020617;
-            color: #f1f5f9;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
         }
 
         header {
-            background: linear-gradient(135deg, var(--primary-tech) 0%, #1e1b4b 100%);
-            padding: 80px 20px;
+            background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+            padding: 70px 20px;
             text-align: center;
-            border-bottom: 1px solid #334155;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        header h1 {
+            color: var(--primary-blue);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #64748b;
+            font-size: 1.2rem;
+            font-weight: 500;
         }
 
         .container {
             max-width: 1000px;
             margin: -40px auto 60px;
-            background: #0f172a;
-            padding: 50px;
-            border-radius: 20px;
-            border: 1px solid #334155;
-            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+            background: var(--card-white);
+            padding: 45px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
         }
 
         h2 {
-            color: var(--accent-cyan);
-            font-size: 1.8rem;
+            color: var(--primary-blue);
+            font-size: 1.6rem;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 12px;
             margin-top: 40px;
             display: flex;
             align-items: center;
-            border-bottom: 1px solid #1e293b;
-            padding-bottom: 10px;
         }
 
         .career-objective {
-            background: rgba(6, 182, 212, 0.1);
-            border-left: 4px solid var(--accent-cyan);
+            background-color: #f0f9ff;
+            border: 1px solid #bae6fd;
             padding: 20px;
             margin-bottom: 30px;
-            border-radius: 0 8px 8px 0;
+            border-radius: 12px;
+            color: #0369a1;
         }
 
         .grid {
@@ -62,119 +75,129 @@
         }
 
         .card {
-            background: #1e293b;
+            background: #fff;
             padding: 25px;
             border-radius: 12px;
-            border: 1px solid #334155;
-            transition: transform 0.3s ease;
+            border: 1px solid #f1f5f9;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            transition: all 0.3s ease;
         }
 
-        .card:hover { transform: translateY(-5px); border-color: var(--accent-cyan); }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-blue);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+        }
 
         .tag {
             display: inline-block;
-            background: #334155;
-            color: var(--accent-cyan);
-            padding: 4px 12px;
+            background: #f1f5f9;
+            color: #475569;
+            padding: 5px 12px;
             border-radius: 6px;
             font-size: 0.85rem;
             margin: 4px;
-            border: 1px solid #475569;
+            font-weight: 500;
         }
 
-        .highlight-text { color: var(--accent-cyan); font-weight: bold; }
-
-        .experience-box {
-            margin-top: 15px;
-            padding-left: 20px;
-            border-left: 2px solid #334155;
+        .ai-tag {
+            background: #ecfdf5;
+            color: #059669;
+            border: 1px solid #a7f3d0;
         }
 
-        footer { text-align: center; padding: 40px; color: var(--text-slate); font-size: 0.8rem; }
+        .learning-badge {
+            background: #fff7ed;
+            color: #c2410c;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-left: 8px;
+            border: 1px solid #ffedd5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 25px; }
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1 style="font-size: 2.8rem; margin: 0;">陳玉鳳 Jade Chen</h1>
-    <p style="font-size: 1.2rem; color: var(--accent-cyan);">AI 協作後端開發工程師 | 跨領域技術轉職者</p>
+    <h1>陳玉鳳</h1>
+    <p>轉職 AI 協作開發 | 零售電商運作專家</p>
 </header>
 
 <div class="container">
     <div class="career-objective">
-        <strong>轉職目標：</strong>
-        具備 9 年零售管理與電商行銷底蘊，目前專精於 <span class="highlight-text">AI 協作後端開發</span>。擅長利用 AI 工具進行高效編碼與邏輯設計，目標將商業營運邏輯轉化為高品質的後端程式碼。
+        <strong>轉職使命：</strong>
+        擁有 10 年零售管理與電商實務底蘊，目前全力轉攻 <span style="font-weight:bold;">AI 協作後端開發</span>。我擅長利用 AI 工具串接商務需求，能精準將店務管理與行銷邏輯轉化為自動化系統。
     </div>
 
     <section>
-        <h2>技術棧與進修中 Skills & Training</h2>
+        <h2>核心技能 (進修中)</h2>
         <div class="grid">
             <div class="card">
-                <h3 style="color: white;">後端開發 & AI 協作</h3>
-                <span class="tag">AI 輔助程式開發</span>
+                <h3>技術開發 <span class="learning-badge">進修中</span></h3>
+                <span class="tag ai-tag">AI 輔助程式開發</span>
+                <span class="tag ai-tag">LLM Prompt Engineering</span>
                 <span class="tag">後端邏輯架構</span>
-                <span class="tag">API 設計與整合</span>
-                <span class="tag">資訊管理與程式設計 (進修中)</span>
-                <span class="tag">資料庫管理基礎</span>
+                <span class="tag">API 設計整合</span>
+                <span class="tag">資訊管理與程式設計</span>
             </div>
             <div class="card">
-                <h3 style="color: white;">領域知識優勢</h3>
-                <span class="tag">電商行銷邏輯</span>
-                <span class="tag">流通技術管理</span>
-                <span class="tag">服務作業自動化</span>
-                <span class="tag">Excel 數據分析</span>
+                <h3>行銷與流通實作 AI 運用</h3>
+                <span class="tag ai-tag">Gemini / NotebookLM</span>
+                <span class="tag ai-tag">AI 協作社群經營</span>
+                <span class="tag ai-tag">Canva 視覺設計</span>
+                <span class="tag ai-tag">AI 影音、影片剪輯</span>
+                <span class="tag">電子商務行銷</span>
             </div>
         </div>
     </section>
 
     <section>
-        <h2>核心優勢：為什麼選擇我？</h2>
-        <div class="experience-box">
-            <p>
-                <span class="highlight-text">● 懂業務邏輯的工程師：</span> 擁有 5-6 年店副理管理實務，能精準理解需求方的商業痛點，降低溝通成本。
-            </p>
-            <p>
-                <span class="highlight-text">● 數據驅動的思維：</span> 具備 3-4 年電商與社群經營經驗，對於使用者行為數據與流量轉換有深厚理解。
-            </p>
-            <p>
-                <span class="highlight-text">● 高效率 AI 協作：</span> 擅長操作生成式 AI 輔助開發，能大幅提升程式碼撰寫、Debug 與系統設計的效率。
-            </p>
-        </div>
-    </section>
-
-    <section>
-        <h2>過往實績轉換 Experience</h2>
+        <h2>實務資歷與成果</h2>
         <div class="grid">
             <div class="card">
-                <strong>店副理 (5-6年)</strong>
-                <p style="font-size: 0.9rem; color: var(--text-slate);">
-                    擅長優化「服務作業管理」，未來可將此邏輯應用於後端 ERP 或自動化系統設計。
-                </p>
+                <h3 style="color:var(--primary-blue)">實體通路 - 店副理 (5-6年)</h3>
+                <p>運用「服務作業管理」優化行政流程。透過熟客 CRM 系統經營，提升店鋪回流率並穩定業績成長，具備豐富團隊領導與客情處理經驗。</p>
             </div>
             <div class="card">
-                <strong>電商行銷 (3-4年)</strong>
-                <p style="font-size: 0.9rem; color: var(--text-slate);">
-                    具備全通路行銷經驗，理解電商平台後端資料交換與使用者行為分析需求。
-                </p>
+                <h3 style="color:var(--primary-blue)">網路電商行銷 (3-4年)</h3>
+                <p>實踐虛實整合（O2O），利用 AI 輔助文案與影音內容製作粉絲團素材。分析消費者行為數據，成功優化線上導購流程。</p>
             </div>
         </div>
     </section>
 
     <section>
         <h2>學歷背景</h2>
-        <p>國立勤益科技大學 | 行銷與流通管理系 (3年進修中)</p>
-        <p>專業學科：統計學、資訊管理與程式設計、電子商務、流通管理科技</p>
+        <div class="card">
+            <strong>國立勤益科技大學 | 行銷與流通管理系 (進修中)</strong><br>
+            專業領域：統計學、會計學、經濟學、流通管理科技、商業心理學、零售管理。
+        </div>
     </section>
 
     <section>
-        <h2>其他資訊</h2>
-        <p><strong>希望區域：</strong>烏日、太平、大里、南屯、南區 (台中市)</p>
-        <p><strong>技術加分：</strong>中打 100字/分以上、台語精通、多項餐飲技術證照</p>
+        <h2>個人優勢與其他</h2>
+        <div style="background:#f8fafc; padding:20px; border-radius:12px;">
+            <p>● <strong>跨界思維：</strong>具備第一線店務邏輯的後端工程師，溝通零時差。</p>
+            <p>● <strong>高效執行：</strong>中打速度 100 字/分以上，精通台語，能應對多元環境。</p>
+            <p>● <strong>區域發展：</strong>鎖定台中市 烏日、太平、大里、南屯、南區。</p>
+            <p>● <strong>專業證照：</strong>丙級中餐烹調(葷食)、丙級烘焙食品技術士。</p>
+        </div>
     </section>
 </div>
 
 <footer>
-    <p>&copy; 2026 陳玉鳳 | 轉職後端工程師數位履歷</p>
+    <p>&copy; 2026 陳玉鳳 | 個人數位履歷專案</p>
 </footer>
 
 </body>
